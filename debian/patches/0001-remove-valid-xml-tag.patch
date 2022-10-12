@@ -1,0 +1,74 @@
+From: Enrico Tassi <gareuselesinge@debian.org>
+Date: Sat, 15 Aug 2015 16:29:17 +0200
+Subject: remove valid xml tag
+
+---
+ doc/us/examples.html | 1 -
+ doc/us/index.html    | 2 --
+ doc/us/license.html  | 1 -
+ doc/us/lom.html      | 1 -
+ doc/us/manual.html   | 2 --
+ 5 files changed, 7 deletions(-)
+
+diff --git a/doc/us/examples.html b/doc/us/examples.html
+index d5299f1..f5205a7 100644
+--- a/doc/us/examples.html
++++ b/doc/us/examples.html
+@@ -189,7 +189,6 @@ inside elem2 tags.</p>
+ </div> <!-- id="main" -->
+ 
+ <div id="about">
+-	<p><a href="http://validator.w3.org/check?uri=referer"><img src="http://www.w3.org/Icons/valid-xhtml10" alt="Valid XHTML 1.0!" height="31" width="88" /></a></p>
+ 	<p><small>
+ 	$Id: examples.html,v 1.5 2006/03/23 00:19:37 carregal Exp $
+ 	</small></p>
+diff --git a/doc/us/index.html b/doc/us/index.html
+index a809fcd..5fdcd46 100644
+--- a/doc/us/index.html
++++ b/doc/us/index.html
+@@ -163,8 +163,6 @@ Comments are welcome!</p>
+ </div> <!-- id="main" -->
+ 
+ <div id="about">
+-	<p><a href="http://validator.w3.org/check?uri=referer">
+-    <img src="http://www.w3.org/Icons/valid-xhtml10" alt="Valid XHTML 1.0!" height="31" width="88" /></a></p>
+ </div> <!-- id="about" -->
+ 
+ </div> <!-- id="container" -->
+diff --git a/doc/us/license.html b/doc/us/license.html
+index bd4a54f..664c175 100644
+--- a/doc/us/license.html
++++ b/doc/us/license.html
+@@ -108,7 +108,6 @@ SOFTWARE.</p>
+ </div> <!-- id="main" -->
+ 
+ <div id="about">
+-	<p><a href="http://validator.w3.org/check?uri=referer"><img src="http://www.w3.org/Icons/valid-xhtml10" alt="Valid XHTML 1.0!" height="31" width="88" /></a></p>
+ 	<p><small>
+ 	$Id: license.html,v 1.9 2007/06/05 20:03:12 carregal Exp $
+ 	</small></p>
+diff --git a/doc/us/lom.html b/doc/us/lom.html
+index c709703..ae323fe 100644
+--- a/doc/us/lom.html
++++ b/doc/us/lom.html
+@@ -166,7 +166,6 @@ on the table.</p>
+ </div> <!-- id="main" -->
+ 
+ <div id="about">
+-	<p><a href="http://validator.w3.org/check?uri=referer"><img src="http://www.w3.org/Icons/valid-xhtml10" alt="Valid XHTML 1.0!" height="31" width="88" /></a></p>
+ 	<p><small>
+ 	$Id: lom.html,v 1.6 2006/03/20 22:26:00 carregal Exp $
+ 	</small></p>
+diff --git a/doc/us/manual.html b/doc/us/manual.html
+index 18a19e1..e57d18a 100644
+--- a/doc/us/manual.html
++++ b/doc/us/manual.html
+@@ -385,8 +385,6 @@ the character '\0'.</p>
+ </div> <!-- id="main" -->
+ 
+ <div id="about">
+-	<p><a href="http://validator.w3.org/check?uri=referer">
+-    <img src="http://www.w3.org/Icons/valid-xhtml10" alt="Valid XHTML 1.0!" height="31" width="88" /></a></p>
+ </div> <!-- id="about" -->
+ 
+ </div> <!-- id="container" -->

@@ -1,0 +1,5 @@
+# test this watch file using:
+# uscan --watchfile debian/watch --upstream-version 0.0.1 --package luaexpat
+#
+version=4
+https://matthewwild.co.uk/projects/luaexpat/luaexpat-([\d\.]*).tar.gz

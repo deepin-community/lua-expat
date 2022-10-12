@@ -1,0 +1,6 @@
+#!/usr/bin/make -f
+
+%:
+	dh $@ --buildsystem=lua --with lua
+
+override_dh_auto_test:

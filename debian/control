@@ -1,0 +1,47 @@
+Source: lua-expat
+Section: interpreters
+Priority: optional
+Maintainer: Debian Lua Team <pkg-lua-devel@lists.alioth.debian.org>
+Uploaders:
+ Victor Seva <vseva@debian.org>,
+Build-Depends:
+ debhelper-compat (= 13),
+ dh-lua (>= 12),
+ libexpat1-dev,
+Standards-Version: 4.6.0.1
+Rules-Requires-Root: no
+Homepage: http://matthewwild.co.uk/projects/luaexpat/
+Vcs-Git: https://salsa.debian.org/lua-team/lua-expat.git
+Vcs-Browser: https://salsa.debian.org/lua-team/lua-expat
+
+Package: lua-expat
+Architecture: any
+Multi-Arch: same
+Pre-Depends:
+ ${misc:Pre-Depends},
+Depends:
+ ${misc:Depends},
+ ${shlibs:Depends},
+Provides:
+ ${lua:Provides},
+XB-Lua-Versions: ${lua:Versions}
+Description: libexpat bindings for the Lua language
+ This package contains the bindings for the expat library.
+
+Package: lua-expat-dev
+Architecture: any
+Multi-Arch: same
+Pre-Depends:
+ ${misc:Pre-Depends},
+Depends:
+ lua-expat (= ${binary:Version}),
+ ${misc:Depends},
+Provides:
+ ${lua:Provides},
+XB-Lua-Versions: ${lua:Versions}
+Section: libdevel
+Description: libexpat development files for the Lua language
+ This package contains the development files of the libexpat Lua bindings,
+ useful to create a statically linked binary (like a C application or a
+ standalone Lua interpreter).
+ Documentation is also shipped within this package.

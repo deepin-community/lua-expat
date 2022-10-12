@@ -1,0 +1,162 @@
+lua-expat (1.3.0-5+u001) UNRELEASED; urgency=medium
+
+  * update
+
+ -- Debian Lua Team <pkg-lua-devel@lists.alioth.debian.org>  Mon, 16 May 2022 17:09:26 +0800
+
+lua-expat (1.3.0-5) unstable; urgency=medium
+
+  [ Kim Alvefur ]
+  * Enable Lua 5.4 support
+
+  [ Victor Seva ]
+  * wrap-and-sort -sat
+  * update Vcs-* links to salsa
+  * update watch
+  * Lua team as maintainer, me as uploader (Closes: #995506)
+  * debhelper 13
+  * update copyright
+  * delete trailing whitespaces from changelog
+  * add Rules-Requires-Root
+
+ -- Victor Seva <vseva@debian.org>  Fri, 14 Jan 2022 13:47:24 +0100
+
+lua-expat (1.3.0-4) unstable; urgency=medium
+
+  * Enable build for Lua 5.3 (Closes: #827069)
+
+ -- Enrico Tassi <gareuselesinge@debian.org>  Fri, 30 Dec 2016 11:53:10 +0100
+
+lua-expat (1.3.0-3) unstable; urgency=medium
+
+  * Do not Pre-Depend on multiarch-support
+  * remove transition package leftover
+  * Remove xml validation tag in doc/
+
+ -- Enrico Tassi <gareuselesinge@debian.org>  Fri, 14 Aug 2015 22:04:53 +0200
+
+lua-expat (1.3.0-2) unstable; urgency=medium
+
+  * Rebuild against Lua 5.1.5-7 (Closes: #723488)
+
+ -- Enrico Tassi <gareuselesinge@debian.org>  Sat, 30 Aug 2014 21:54:51 +0200
+
+lua-expat (1.3.0-1) unstable; urgency=high
+
+  * New upstream release including a security fix (DOS prevention)
+
+ -- Enrico Tassi <gareuselesinge@debian.org>  Sat, 05 Apr 2014 12:31:01 +0200
+
+lua-expat (1.2.0-6) unstable; urgency=low
+
+  * Packaging moved to git
+  * Remove transitional packages
+
+ -- Enrico Tassi <gareuselesinge@debian.org>  Thu, 19 Apr 2012 09:58:50 +0200
+
+lua-expat (1.2.0-5) unstable; urgency=low
+
+  * Clean up debian/rules
+  * Build depend on dh-lua >= 12
+  * Copyright file ported to 1.0 format
+
+ -- Enrico Tassi <gareuselesinge@debian.org>  Thu, 19 Apr 2012 09:56:34 +0200
+
+lua-expat (1.2.0-4) unstable; urgency=low
+
+  * Removed build dependency over shake that is lua5.1 only
+  * Bump Standards-Version to 3.9.3, no changes
+  * Switch to dh-lua
+  * Packages renamed according to the new lua policy
+  * Add patch lua5.2.patch adding support for lua5.2
+  * Copyright file ported to dep5 format
+  * Updated upstream contact infos
+
+ -- Enrico Tassi <gareuselesinge@debian.org>  Mon, 09 Apr 2012 16:39:20 +0200
+
+lua-expat (1.2.0-3) unstable; urgency=low
+
+  * source format 3.0 (quilt)
+
+ -- Enrico Tassi <gareuselesinge@debian.org>  Thu, 21 Jul 2011 17:52:15 +0200
+
+lua-expat (1.2.0-2) unstable; urgency=low
+
+  * Bump Standards-Version to 3.9.2, no changes
+  * Multi-Arch compliant (build-depend on lua-policy >= 32 and dh >= 8.1.3)
+
+ -- Enrico Tassi <gareuselesinge@debian.org>  Wed, 20 Jul 2011 21:48:31 +0200
+
+lua-expat (1.2.0-1) unstable; urgency=high
+
+  * new upstream release adding APIs to prevent the “billion laughs”
+    denial-of-service attack (Closes: #629225)
+
+ -- Enrico Tassi <gareuselesinge@debian.org>  Sat, 04 Jun 2011 18:02:33 +0200
+
+lua-expat (1.1.0-4) unstable; urgency=low
+
+  * depend on lua5.1-policy-dev >= 27 to kill all .la files (Closes: #620600)
+
+ -- Enrico Tassi <gareuselesinge@debian.org>  Tue, 31 May 2011 09:48:40 +0200
+
+lua-expat (1.1.0-3) unstable; urgency=low
+
+  * depend on lua5.1-policy-dev >= 22
+  * changed lua to Lua in the package description
+  * bumped standards-version to 3.8.2, no changes needed
+
+ -- Enrico Tassi <gareuselesinge@debian.org>  Tue, 21 Jul 2009 12:48:09 +0200
+
+lua-expat (1.1.0-2) unstable; urgency=low
+
+  * Renamed cdbs deprecated variable
+  * Vcs- fields fixed
+  * Use shake to run compilation tests
+  * Added Homepage control field
+  * Removed dpatch build dependency
+  * Moved -dev package in section libdevel
+
+ -- Enrico Tassi <gareuselesinge@debian.org>  Tue, 18 Mar 2008 17:12:50 +0100
+
+lua-expat (1.1.0-1) unstable; urgency=low
+
+  * new upstream release, works out of the box with lua5.1
+
+ -- Enrico Tassi <gareuselesinge@debian.org>  Fri, 08 Jun 2007 18:42:44 +0200
+
+lua-expat (1.0.2-5) unstable; urgency=low
+
+  * Updated to policy 10 that fixes clean target (Closes: #424551)
+
+ -- Enrico Tassi <gareuselesinge@debian.org>  Wed, 16 May 2007 16:20:50 +0200
+
+lua-expat (1.0.2-4) unstable; urgency=low
+
+  * made control file binNMU safe
+  * Added a note about the documentation shipped within the -dev package
+    in the control file
+  * Added call to lua5.1-policy-apply --reverse in the clean:: hook
+
+ -- Enrico Tassi <gareuselesinge@debian.org>  Mon,  8 Jan 2007 17:32:37 +0100
+
+lua-expat (1.0.2-3) unstable; urgency=low
+
+  * Moved to policy version 7
+  * The FTBFS bug #405990 is because of an incompatibility with the policy
+    version 7 that is not in etch. This incompatibility has been fixed
+    (Closes: #405990)
+
+ -- Enrico Tassi <gareuselesinge@debian.org>  Mon,  8 Jan 2007 17:30:34 +0100
+
+lua-expat (1.0.2-2) unstable; urgency=low
+
+  * added XS-X-Vcs-svn field to control.
+
+ -- Enrico Tassi <gareuselesinge@debian.org>  Sun,  3 Sep 2006 10:26:13 +0200
+
+lua-expat (1.0.2-1) unstable; urgency=low
+
+  * Initial release. (Closes: #384350)
+
+ -- Enrico Tassi <gareuselesinge@debian.org>  Wed, 23 Aug 2006 20:12:16 +0200
